@@ -21,6 +21,7 @@ interface FigmaMaterialTextFieldInputsProps extends BaseFigmaProps {
 figmaMapping({
   componentKey: "2555a30a216197cdd4da2bc7f212a106b3b51af0",
   mapper(figma: FigmaMaterialTextFieldInputsProps) {
+    console.log(figma);
     // Extract text content
     const labelText =
       figma["Label text"] ??
@@ -47,7 +48,7 @@ figmaMapping({
     // Map style variant
     const variant = figma.Style?.toLowerCase() ?? "filled";
 
-    return html` <input
+    return html`<input
       matInput
       label=${labelText}
       value=${inputText}
