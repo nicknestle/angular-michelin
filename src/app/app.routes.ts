@@ -1,3 +1,8 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { FigmaImportsPage } from "./components/figma-imports.component";
+
+export const routes: Routes = [{
+  path: "figma-imports",
+  component: FigmaImportsPage
+}];

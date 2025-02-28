@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"ng serve\" \"npx builder-dev-tools\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "builder-dev": "concurrently \"ng serve\" \"npx builder-dev-tools\""
   },
   "private": true,
   "dependencies": {
@@ -14,9 +15,14 @@
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",
     "@angular/forms": "^19.2.0",
+    "@angular/material": "^19.2.1",
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
+    "@builder.io/dev-tools": "^1.6.3",
+    "@builder.io/sdk-angular": "^0.18.5",
+    "@michelin/theme": "^8.1.0",
+    "concurrently": "^9.1.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
