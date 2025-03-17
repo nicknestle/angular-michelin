@@ -36,9 +36,6 @@ figmaMapping({
     const attributesString = Object.entries(attributes)
       .filter(([_, value]) => value !== undefined && value !== '')
       .map(([key, value]) => {
-        if (typeof value === 'boolean') {
-          return value ? key : '';
-        }
         return `${key}="${value}"`;
       })
       .filter(Boolean)
@@ -46,6 +43,6 @@ figmaMapping({
     
     console.log(attributesString)
 
-    return html`<mat-checkbox ${attributesString} />`;
+    return html`<mat-checkbox ${attributesString}>&nbsp;</mat-checkbox>`;
   },
 });
