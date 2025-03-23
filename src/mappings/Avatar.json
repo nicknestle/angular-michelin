@@ -1,0 +1,96 @@
+{
+    "$id": "5:51194",
+    "$name": "Avatar",
+    "$type": "INSTANCE",
+    "$rawNode": {
+        "id": "5:51194",
+        "name": "Avatar",
+        "type": "INSTANCE",
+        "scrollBehavior": "SCROLLS",
+        "componentId": "1:1336",
+        "componentProperties": {
+            "Size": {
+                "value": "Large (Profile)",
+                "type": "VARIANT",
+                "boundVariables": {}
+            }
+        },
+        "overrides": [
+            {
+                "id": "5:51194",
+                "overriddenFields": [
+                    "height",
+                    "width"
+                ]
+            }
+        ],
+        "children": [],
+        "blendMode": "PASS_THROUGH",
+        "clipsContent": true,
+        "background": [
+            {
+                "blendMode": "NORMAL",
+                "type": "IMAGE",
+                "scaleMode": "FILL",
+                "imageRef": "cf80d5d463aecad46da86c95397686043d4860b5"
+            }
+        ],
+        "fills": [
+            {
+                "blendMode": "NORMAL",
+                "type": "IMAGE",
+                "scaleMode": "FILL",
+                "imageRef": "cf80d5d463aecad46da86c95397686043d4860b5"
+            }
+        ],
+        "strokes": [],
+        "cornerRadius": 1000,
+        "cornerSmoothing": 0,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "backgroundColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+        },
+        "absoluteBoundingBox": {
+            "x": 808.5,
+            "y": 353,
+            "width": 140,
+            "height": 140
+        },
+        "absoluteRenderBounds": {
+            "x": 808.5,
+            "y": 353,
+            "width": 140,
+            "height": 140
+        },
+        "constraints": {
+            "vertical": "TOP",
+            "horizontal": "LEFT"
+        },
+        "effects": [],
+        "interactions": [],
+        "mainComponent": {
+            "name": "Avatar",
+            "key": "31980984fd9c1c5cc1a0126013ce85e92134330a"
+        },
+        "isAsset": true
+    },
+    "$textContent": "",
+    "$inputs": [
+        {
+            "id": "Size",
+            "name": "Size",
+            "value": "Large (Profile)",
+            "baseType": "variant",
+            "variantOptions": [],
+            "isDefault": false,
+            "type": "string"
+        }
+    ],
+    "$children": [],
+    "$imageUrl": "builder-image://5:51194",
+    "Size": "Large (Profile)"
+}

@@ -3,6 +3,7 @@ import {
   type BaseFigmaProps,
   html,
 } from "@builder.io/dev-tools/figma";
+import { MatInput } from "@angular/material/input";
 
 // ❖ Material Text field / Inputs
 interface FigmaMaterialTextFieldInputsProps extends BaseFigmaProps {
