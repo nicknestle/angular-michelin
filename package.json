@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
-    "@builder.io/dev-tools": "^1.6.3",
+    "@builder.io/dev-tools": "^1.6.15",
     "@builder.io/sdk-angular": "^0.18.5",
     "@michelin/theme": "^8.1.0",
     "concurrently": "^9.1.2",

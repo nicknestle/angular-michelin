@@ -1,4 +1,8 @@
-import { figmaMapping, html, type BaseFigmaProps } from "@builder.io/dev-tools/figma";
+import {
+  figmaMapping,
+  html,
+  type BaseFigmaProps,
+} from "@builder.io/dev-tools/figma";
 
 /*
 // Example Figma component structure
@@ -30,51 +34,51 @@ interface FigmaNavbarProps extends BaseFigmaProps {
   Loged?: "true" | "false";
 }
 
-// Read more at https://www.builder.io/c/docs/mapping-functions
-figmaMapping({
-  componentKey: "f53038ecbfb17229a2ca99793e1ec443d8d78fbe",
-  mapper(figma: FigmaNavbarProps) {
-    // Normalize color by removing emoji and converting to lowercase
-    const normalizeColor = (color?: string) => {
-      if (!color) return undefined;
-      return color
-        .replace(/[^\w\s]/g, "")
-        .trim()
-        .toLowerCase();
-    };
+// // Read more at https://www.builder.io/c/docs/mapping-functions
+// figmaMapping({
+//   componentKey: "f53038ecbfb17229a2ca99793e1ec443d8d78fbe",
+//   mapper(figma: FigmaNavbarProps) {
+//     // Normalize color by removing emoji and converting to lowercase
+//     const normalizeColor = (color?: string) => {
+//       if (!color) return undefined;
+//       return color
+//         .replace(/[^\w\s]/g, "")
+//         .trim()
+//         .toLowerCase();
+//     };
 
-    // Normalize size by converting to standard format
-    const normalizeSize = (size?: string) => {
-      if (!size) return undefined;
-      return size;
-    };
+//     // Normalize size by converting to standard format
+//     const normalizeSize = (size?: string) => {
+//       if (!size) return undefined;
+//       return size;
+//     };
 
-    // Convert string 'true'/'false' to boolean
-    const isLogged = figma.Loged === "true";
+//     // Convert string 'true'/'false' to boolean
+//     const isLogged = figma.Loged === "true";
 
-    // Build the inner content conditionally
-    const logoContent = figma["Visible Logo"] 
-      ? `<div><!-- Logo content would go here --></div>` 
-      : '';
+//     // Build the inner content conditionally
+//     const logoContent = figma["Visible Logo"]
+//       ? `<div><!-- Logo content would go here --></div>`
+//       : '';
 
-    const appNameContent = figma["Visible APP NAME"] 
-      ? `<div>${figma["App Name"]}</div>` 
-      : '';
+//     const appNameContent = figma["Visible APP NAME"]
+//       ? `<div>${figma["App Name"]}</div>`
+//       : '';
 
-    const searchContent = figma["Visible Search"] 
-      ? `<div><!-- Search content would go here --></div>` 
-      : '';
+//     const searchContent = figma["Visible Search"]
+//       ? `<div><!-- Search content would go here --></div>`
+//       : '';
 
-    const userContent = isLogged 
-      ? `<div>${figma.Nom} ${figma.Prnom}</div>` 
-      : '';
+//     const userContent = isLogged
+//       ? `<div>${figma.Nom} ${figma.Prnom}</div>`
+//       : '';
 
-    // Combine all content using the html template literal tag
-    return html`<mic-navbar>
-        ${logoContent}
-        ${appNameContent}
-        ${searchContent}
-        ${userContent}
-      </mic-navbar>`;
-  },
-});
+//     // Combine all content using the html template literal tag
+//     return html`<mic-navbar>
+//         ${logoContent}
+//         ${appNameContent}
+//         ${searchContent}
+//         ${userContent}
+//       </mic-navbar>`;
+//   },
+// });
